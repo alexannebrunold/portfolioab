@@ -1,0 +1,23 @@
+{
+  "name": "portfolioab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexannebrunold/portfolioab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexannebrunold/portfolioab/issues"
+  },
+  "homepage": "https://github.com/alexannebrunold/portfolioab#readme",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
