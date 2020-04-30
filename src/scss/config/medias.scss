@@ -4,11 +4,11 @@
     }
 }
 
-@mixin tablette{
-    @media (min-width:$tablette){
-        @content;
-    }
-}
+// @mixin tablette{
+//     @media (min-width:$tablette){
+//         @content;
+//     }
+// }
 
 @mixin pc{
     @media (min-width:$pc){
