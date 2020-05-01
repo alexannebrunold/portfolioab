@@ -2,12 +2,24 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
+    height: 100%;
+    
     &__section--1{
         display: flex;
-        flex-direction: row;
-        &--logo{
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &--logoImage{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &--logo{
             padding-top: 2%;
+            }   
+        }
+        &--socialMedias{
+            flex-direction: row;
+           margin-top: -40%;
         }
     }
     &__section--2{
@@ -19,14 +31,24 @@
         & li{
             font-size: 104px;
             font-weight: bold;
-            color: transparent;
-            margin-bottom: 12%;
-            -webkit-text-stroke: 2px;
+            padding-bottom: 8%;
+            & a{
+                text-decoration: none;
+                -webkit-text-stroke: 2px;
             -webkit-text-stroke-color: $black;
+            &:visited{
+                color: white;
+            }
+            &:active{
+                border-bottom: 1px solid;
+            }
             &:hover{
-                cursor: pointer;
                 color: $black;
             }
+            &:link{
+                text-decoration: none;
+            }
         }
+    }
     }
 }
