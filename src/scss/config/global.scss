@@ -6,6 +6,8 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #F5F6F6;
+    overflow-y: auto;
+    overflow-x: hidden;
 
 @include smartphone{
     padding-left: 16px;

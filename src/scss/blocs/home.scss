@@ -1,0 +1,32 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    &__section--1{
+        display: flex;
+        flex-direction: row;
+        &--logo{
+            padding-top: 2%;
+        }
+    }
+    &__section--2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+        & li{
+            font-size: 104px;
+            font-weight: bold;
+            color: transparent;
+            margin-bottom: 12%;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: $black;
+            &:hover{
+                cursor: pointer;
+                color: $black;
+            }
+        }
+    }
+}
