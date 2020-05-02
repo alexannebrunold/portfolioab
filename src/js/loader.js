@@ -27,3 +27,9 @@ function typeText(){
 }, 80);
 }
 typeText()
+
+var click = document.getElementById('clik')
+
+click.addEventListener('click', ()=>{
+
+})

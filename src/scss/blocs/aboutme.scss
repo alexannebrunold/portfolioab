@@ -1,0 +1,49 @@
+// .abtme__header{
+// &--logo{
+
+// }
+// }
+
+.abtme{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    &__main{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2%;
+    @include pc{
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    }
+    &--img{
+        width: 80%;
+        height: auto;
+        @include pc{
+            width: 40%;
+            height: 40%;
+            padding-right: 12%;
+        }
+    }
+    &--text{
+        margin-top: 8%;
+        line-height: 159.6%;
+        font-size: 14px;
+        font-weight:bold;
+        @include pc{
+            font-size: 16px;
+        }
+        & span{
+            color: $primary;
+        }
+    }
+}
+&__footer{
+    bottom: 0;
+}
+}
