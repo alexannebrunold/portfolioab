@@ -1,14 +1,17 @@
 .home{
+    @include pc{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     height: 100%;
-    
+    }
     &__section--1{
+        display: none;
+        @include pc{
+            visibility: visible;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
         &--logoImage{
             display: flex;
             flex-direction: row;
@@ -22,16 +25,23 @@
            margin-top: -40%;
         }
     }
+}
     &__section--2{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        align-content: space-between;
+        justify-content: space-around;
+        align-content: space-around;
+        text-align: center;
+        height: 100vh;
         & li{
-            font-size: 104px;
+            font-size: 54px; //104
             font-weight: bold;
-            padding-bottom: 8%;
+            margin-bottom: 16%;
+            @include pc{
+                font-size: 104px;
+                margin-bottom:8% ;
+            }
             & a{
                 text-decoration: none;
                 -webkit-text-stroke: 2px;
