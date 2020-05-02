@@ -1,0 +1,16 @@
+// .abtme__header{
+// &--logo{
+
+// }
+// }
+
+.abtme__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--img{
+        width: 80%;
+        height: 80%;
+    }
+}
