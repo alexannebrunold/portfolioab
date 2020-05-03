@@ -10,12 +10,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
+    &__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+    }
     &__main{
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     margin-bottom: 2%;
+    width: 100vw;
     @include pc{
     flex-direction: row;
     align-content: space-between;
@@ -26,17 +33,16 @@
         height: auto;
         @include pc{
             width: 40%;
-            height: 40%;
             padding-right: 12%;
         }
     }
     &--text{
-        margin-top: 8%;
         line-height: 159.6%;
         font-size: 14px;
         font-weight:bold;
         @include pc{
             font-size: 16px;
+            padding-right: 160px;
         }
         & span{
             color: $primary;
