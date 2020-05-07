@@ -11,28 +11,35 @@ body{
 @include smartphone{
     padding-left: 16px;
     padding-right: 16px;
+    // & section{
+    //     padding-left: 16px;
+    // padding-right: 16px;  
+    // }
 }
  @include pc{
      color: $black;
-  
-     overflow-x: scroll;
-     scroll-snap-type: x mandatory;
-     display: grid;
-     grid-template-columns: repeat(2, 100vw);
-     section{
-        height: calc(100vh);
-        width: calc(100vw);
-        scroll-snap-align: start;
-           padding-left: 80px;
-     padding-right: 80px;
-        // &:nth-of-type(1){
-        //     background-color: yellow;
-        // }
-        // &:nth-of-type(2){
-        //     background-color: blue;
-        // }
+     padding-left: 80px;
+    padding-right: 80px;
  
-    }
+    
+    //  overflow-x: scroll;
+    //  scroll-snap-type: x mandatory;
+    //  display: grid;
+    //  grid-template-columns: repeat(2, 100vw);
+    //  section{
+    //     height: calc(100vh);
+    //     width: calc(100vw);
+    //     scroll-snap-align: start;
+    //        padding-left: 80px;
+    //     padding-right: 80px;
+    //     // &:nth-of-type(1){
+    //     //     background-color: yellow;
+    //     // }
+    //     // &:nth-of-type(2){
+    //     //     background-color: blue;
+    //     // }
+ 
+    // }
   
 }
 }

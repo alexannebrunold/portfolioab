@@ -7,12 +7,19 @@
     <link rel="SORTCOUT ICON" href="../assets/Logo.svg">
     <title>Home</title>
 </head>
+
 <body>
     <!-- Home -->
+<header class="header">
+    <span class="header__content">
+        <span class="header__content--logo"><img src="../assets/Logo.svg" alt=""></span>
+        <span class="header__content--bg"><img src="../assets/Menu_Burger.svg" alt=""></span>
+    </span>
+</header>
+
 <section class="home">  
     <article class="home__section--1">
         <div class="home__section--1--logoImage">
-            <span class="home__section--1--logoImage--logo"><img src="../assets/Logo.svg" alt=""></span>
             <span><img src="../assets/Dessin.svg" alt=""></span>
         </div>
 
@@ -27,19 +34,19 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="works.html">Works</a></li>
-                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="#aboutme">About me</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </article>
 </section>
 
+<!-- Works -->
+<section class="works">
+
+</section>
 <!-- About me -->
-<section class="abtme">
-    <header class="abtme__header">
-        <span class="abtme__header--logo"><img src="../assets/Logo.svg" alt=""></span>
-        <span><img src="../assets/Menu_Burger.svg" alt=""></span>
-    </header>
+<section class="abtme" id="aboutme">
     <main class="abtme__main">
         <img src="../assets/Alexanne.svg" alt="" class="abtme__main--img">
         <p class="abtme__main--text">Hey !<br>
@@ -49,10 +56,33 @@
         <br><br>
         I’m currently looking for a 3 months internship from July as well as a work-study contract from Octobre 2020.</p>
     </main>
-    <footer class="abtme__footer">
-            <span><img src="../assets/Github.svg" alt=""></span>
-            <span><img src="../assets/LinkedIn.svg" alt=""></span>
-    </footer>
 </section>
+
+<!-- Contact -->
+<section class="contact">
+    <h1 class="contact__title">Contact</h1>
+    <form action="contact__formulaire" class="contact__formulaire">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="user__name" id="name" placeholder="Jean-Claude Pignot">
+        </div>
+        <div>
+            <label for="mail">E-Mail</label>
+            <input type="email" name="user__mail" id="mail" placeholder="jcpignot@gmail.com">
+        </div>
+        <div>
+            <label for="msg">Message</label>
+            <textarea name="user__message" id="msg"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="contact__formulaire--button">Send</button>
+        </div>
+    </form>
+</section>
+
+<footer class="footer">
+    <span><img src="../assets/Github.svg" alt=""></span>
+    <span><img src="../assets/LinkedIn.svg" alt=""></span>
+</footer>
 </body>
 </html>
