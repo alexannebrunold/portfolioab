@@ -5,7 +5,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #F5F6F6;
+    background-color: $white;
     overflow-y: auto;
     overflow-x: hidden;
 @include smartphone{
