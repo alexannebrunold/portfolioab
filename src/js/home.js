@@ -9,4 +9,3 @@ menuBg.addEventListener("click", ()=>{
         menu.classList.toggle("visible")
     }
 })
-
