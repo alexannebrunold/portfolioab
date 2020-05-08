@@ -1,9 +1,25 @@
+.header{
+    width: 90%;
+position: fixed;
+background-color: grey;
+    &__content{
+        display: flex;
+        flex-direction: row;
+    align-content: space-between;
+        justify-content: space-between;
+       
+    }
+}
+
 .home{
+    height: 100vh;
     @include pc{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     height: 100%;
+    width: 100vw;
+    padding-right: 180px;
     }
     &__section--1{
         display: none;
