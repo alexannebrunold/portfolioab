@@ -34,6 +34,9 @@
                     &--1{
                         width: 288px;
                         height: 184px;
+                        &:hover{
+                            cursor: pointer;
+                        }
                         @include pc{
                             width: 515px;
                             height: 328px;
@@ -42,6 +45,9 @@
                     &--2{
                         width: 288px;
                         height: 184px;
+                        &:hover{
+                            cursor: pointer;
+                        }
                         @include pc{
                             width: 515px;
                             height: 328px;
