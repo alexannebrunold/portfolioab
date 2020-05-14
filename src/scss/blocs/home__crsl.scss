@@ -15,7 +15,9 @@
             &__item{
                 display: flex;
                 flex-direction: column;
+               
                 @include pc{
+                 
                     display: flex;
                     flex-direction: row-reverse;
                     align-items: center;
@@ -48,28 +50,40 @@
 
                 }
                 & p{
-                    text-align: center;
+                    line-height: 159.6%;
                     font-size: 14px;
+                    font-weight:bold;
+                    width: 80%;
+                    text-align: center;
+                    & span{
+                        color: $primary;
+                    }
                     @include pc{
                         text-align: center;
                         width: 336px;
                         margin-right: 16%;
                         font-size: 16px;
                     }
-                   
                 }
                 &:last-child{
                     @include pc{
                         display: flex;
                         flex-direction: row;
                     }
-                 
                     & p{
+                        line-height: 159.6%;
+                        font-size: 14px;
+                        font-weight:bold;
+                        width: 80%;
                         text-align: center;
+                        & span{
+                            color: $primary;
+                        }
                         @include pc{
                             text-align: center;
                             margin-right: 0;
                             margin-left: 16%;
+                            font-size: 16px;
                         }
                        
                     }

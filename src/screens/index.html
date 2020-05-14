@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/styles.scss">
     <link rel="SORTCOUT ICON" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Home</title>
 </head>
 
@@ -12,13 +13,13 @@
     <!-- Home -->
 <header class="header">
     <span class="header__content">
-        <span class="header__content--logo"><img src="../assets/Logo.svg" alt=""></span>
+        <span class="header__content--logo"><a href="index.html"><img src="../assets/Logo.svg" alt=""></a></span>
         <span class="header__content--bg" id="menuBg"><img src="../assets/Menu_Burger.svg" alt=""></span>
           
     </span>
     <nav class="header__menu" id="menu">
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#works">Works</a></li>
             <li><a href="#aboutme">About me</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -54,21 +55,24 @@
 <section class="works" id="works">
     <div class="works__container">
             <div class="works__container__item">
-                <div class="works__container__item--image">
+                <div class="works__container__item--image" data-aos="fade-left" data-aos-offset="2"
+                data-aos-easing="ease-in" >
                     <img src="../assets/img1.svg" alt="" class="works__container__item--image--1"> 
                 </div>
-                <p>Lorem, ipsum sit amet consectetur adipisicing elit. 
-                    Fuga laudantium molestiae numquam commodi et reiciendis ad voluptate, beatae atque animi 
-                    aliquid nemo porro eum blanditiis illum quam placeat error sequi!</p>
+                <p><span>Pocket Disney</span> is a school projet who has realised in <span>4</span> days. The subjet was 
+                    to imagine and create a new product for a brand of our choice and developp the website around
+                    this product. It was an integration project with <span>HTML/CSS3/SASS</span> and <span>JavaScript.</span>
+                </p>
             </div>
 
             <div class="works__container__item">
-                <div class="works__container__item--image">
+                <div class="works__container__item--image" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                    <img src="../assets/img1.svg" alt="" class="works__container__item--image--2"> 
                 </div>
-                <p>Lorem, ipsum sit amet consectetur adipisicing elit. 
-                    Fuga laudantium molestiae numquam commodi et reiciendis ad voluptate, beatae atque animi 
-                    aliquid nemo porro eum blanditiis illum quam placeat error sequi!</p>
+                <p><span>Cyber-Run</span> is a school projet who has realised in <span>4</span> days. The subjet was 
+                    to create and developp a game with an identity. It was an <span>JavaScript</span> project with <span>HTML/CSS3/SASS</span>, and a librairy 
+                    who name is <span>oxo</span>.</p>
             </div>
     </div>
 
@@ -117,5 +121,7 @@
     <span><img src="../assets/LinkedIn.svg" alt=""></span>
 </footer>
 <script src="../js/home.js" defer></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </body>
 </html>
