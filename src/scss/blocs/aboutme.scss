@@ -3,9 +3,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    padding-top: 0.6%;
+    margin-top: 56%;
+    height: 80%;
     @include pc{
-        margin-top: 32%;
+        margin-top: 56%;
+        align-items: center;
     }
     &__main{
     display: flex;
@@ -21,6 +23,7 @@
     &--img{
         width: 80%;
         height: auto;
+        margin-bottom: 2%;
         @include pc{
             width: 40%;
             padding-right: 12%;
