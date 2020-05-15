@@ -3,24 +3,21 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-   
-    height: 80%;
-    
     @include pc{
-        margin-top: 56%;
         align-items: center;
         font-family: "Oswald";
+        padding-bottom: 12%;
     }
     &--title{
         font-size: 40px;
         font-weight: 700;
         color: #111111;
         text-align: center;
-    
         z-index: -1;
-        
+        margin-bottom: 8%;
         @include pc{
             font-size: 54px;
+            margin-bottom: 8%;
         }
     }
     &__main{
@@ -39,7 +36,7 @@
     &--img{
         width: 80%;
         height: auto;
-        margin-bottom: 2%;
+        margin-bottom: 4%;
         @include pc{
             width: 40%; 
         }
@@ -63,8 +60,5 @@
         }
     }
 }
-// &__footer{
-//     bottom: 0;
-// }
 }
 
