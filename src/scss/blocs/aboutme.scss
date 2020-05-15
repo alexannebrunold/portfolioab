@@ -25,12 +25,11 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 100vw;
     @include pc{
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
-    width: 80vw;
+    width: 100%;
     align-items: center;
     }
     &--img{
