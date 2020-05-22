@@ -1,27 +1,35 @@
-.loader{
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 16%;
-    @include smartphone{
-        padding-top: 60%;
-    }
+.loader {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 56%;
+	@include pc {
+		padding-top: 12%;
+	}
 
-    &__text{
-        color: $primary;
-        font-size: 140px;
-        @include smartphone{
-            font-size: 40px;
-        }
-     
-    &--p{
-        color: $black;
-        font-size: 50px;
-        margin-top: 8%;
-        @include smartphone{
-            font-size: 16px;
-        }
-    }
+	&__text {
+		color: $primary;
+		font-size: 140px;
+		@include smartphone {
+			font-size: 40px;
+		}
+
+		&--p {
+			color: $black;
+			font-size: 50px;
+			margin-top: 8%;
+			@include smartphone {
+				font-size: 16px;
+			}
+		}
+	}
+	&__arrow {
+		display: flex;
+		justify-content: center;
+		opacity: 0;
+		&--img {
+			margin-top: 4%;
+			height: 40px;
+			width: 40px;
+		}
+	}
 }
-
-}
-
