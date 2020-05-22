@@ -48,6 +48,6 @@ window.addEventListener("wheel", function () {
 	if (fini == true) {
 		console.log("r");
 
-		window.location.href = "../screens/index.html";
+		window.location.href = "https://alexannebrd.netlify.app/screens/index.html";
 	}
 });
