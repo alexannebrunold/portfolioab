@@ -1,35 +1,53 @@
 var selectFirstText = document.querySelector("h1");
-var firstText =  "Hi";
+var firstText = "Hi";
 var contentFirstText = 0;
 
-var selectSecondText = document.querySelector("h2")
-var secondText = "I'm ALEXANNE"
+var selectSecondText = document.querySelector("h2");
+var secondText = "I'm ALEXANNE";
 var contentSecondText = 0;
 
-var selectThirdText = document.querySelector("p")
+var selectThirdText = document.querySelector("p");
 var thirdText = "student in developpement web";
 var contentThirdText = 0;
+var fini = false;
 
-function typeText(){
-    setInterval(() => {
-    if(contentFirstText<firstText.length){
-      selectFirstText.innerHTML += firstText.charAt(contentFirstText);
-        contentFirstText++;
-    }
-        else if(contentFirstText !== 'undefined' && contentSecondText<secondText.length){
-               selectSecondText.innerHTML += secondText.charAt(contentSecondText);
-               contentSecondText++;
-    }
-    if(contentSecondText == secondText.length && contentThirdText<thirdText.length){
-      selectThirdText.innerHTML += thirdText.charAt(contentThirdText);
-      contentThirdText++;
-    }
-}, 80);
+let arrow = document.querySelector(".loader__arrow");
+
+//Text scribe
+function typeText() {
+	setInterval(() => {
+		if (contentFirstText < firstText.length) {
+			selectFirstText.innerHTML += firstText.charAt(contentFirstText);
+			contentFirstText++;
+		} else if (
+			contentFirstText !== "undefined" &&
+			contentSecondText < secondText.length
+		) {
+			selectSecondText.innerHTML += secondText.charAt(contentSecondText);
+			contentSecondText++;
+		}
+		if (
+			contentSecondText == secondText.length &&
+			contentThirdText < thirdText.length
+		) {
+			selectThirdText.innerHTML += thirdText.charAt(contentThirdText);
+			contentThirdText++;
+			if (contentThirdText == thirdText.length) {
+				fini = true;
+				arrow.style.opacity = 1;
+			} else {
+				fini = false;
+			}
+		}
+	}, 80);
 }
-typeText()
+typeText();
 
-var click = document.getElementById('clik')
+//Arrow scroll to the landing page
+window.addEventListener("wheel", function () {
+	if (fini == true) {
+		console.log("r");
 
-click.addEventListener('click', ()=>{
-
-})
+		window.location.href = "../screens/index.html";
+	}
+});
