@@ -12,16 +12,28 @@ AOS.init({
 	easing: "ease", // default easing for AOS animations
 	once: false, // whether animation should happen only once - while scrolling down
 	mirror: false, // whether elements should animate out while scrolling past them
-});
+})
 
-let menuBg = document.getElementById("menuBg");
-let menu = document.getElementById("menu");
+let menuBg = document.getElementById("menuBg")
+let menu = document.getElementById("menu")
+
+let menuBgOpen = document.querySelector(".header__content--bg--open")
+let menuBgClose = document.querySelector(".header__content--bg--close")
 
 menuBg.addEventListener("click", () => {
-	if (!menuBg.getAttribute("clicked")) {
-		menuBg.classList.toggle("clicked");
+	if (!menuBg.getAttribute("clicked") || menuBgClose.style.display == "none") {
+		menuBg.classList.toggle("clicked")
+
+		menuBgOpen.style.display = "block"
+		menuBgClose.style.display = "none"
 	}
-	if (!menu.getAttribute("visible")) {
-		menu.classList.toggle("visible");
+	if (!menu.getAttribute("visible") || menuBgClose.style.display == "block") {
+		menu.classList.toggle("visible")
+		menuBgClose.style.display = "block"
+		menuBgOpen.style.display = "none"
 	}
-});
+})
+
+// menuBg.addEventListener("click", () =>{
+// 	if()
+// })
