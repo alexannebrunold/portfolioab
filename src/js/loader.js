@@ -46,7 +46,11 @@ typeText();
 //Arrow scroll to the landing page
 window.addEventListener("wheel", function () {
 	if (fini == true) {
-		console.log("r");
 		window.location.href = "https://alexannebrd.netlify.app/screens/index.html";
 	}
 });
+
+/**
+ * Si la window.location.href == a href du html alors l'élément est en noir
+ *
+ */
