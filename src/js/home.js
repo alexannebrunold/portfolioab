@@ -34,6 +34,14 @@ menuBg.addEventListener("click", () => {
 	}
 })
 
-// menuBg.addEventListener("click", () =>{
-// 	if()
-// })
+const countEl = document.getElementById("count")
+
+updateVisitCount()
+
+function updateVisitCount() {
+	fetch("https://api.countapi.xyz/hit/alexannebrd.netlify.app/?amount=0")
+		.then((res) => res.json())
+		.then((res) => {
+			countEl.innerHTML = res.value
+		})
+}
