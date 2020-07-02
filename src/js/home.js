@@ -36,8 +36,6 @@ menuBg.addEventListener("click", () => {
 
 const countEl = document.getElementById("count")
 
-updateVisitCount()
-
 function updateVisitCount() {
 	fetch("https://api.countapi.xyz/hit/alexannebrd.netlify.app/?amount=0")
 		.then((res) => res.json())
