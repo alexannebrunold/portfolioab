@@ -7,7 +7,7 @@ var secondText = "I'm ALEXANNE";
 var contentSecondText = 0;
 
 var selectThirdText = document.querySelector("p");
-var thirdText = "student in developpement web";
+var thirdText = "fullstack js developper";
 var contentThirdText = 0;
 var fini = false;
 
